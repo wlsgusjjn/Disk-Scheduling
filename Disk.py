@@ -186,9 +186,9 @@ def SSTF():
 
 
 
-    total_time["text"] = "Total time : " + str(int(seek_time + rotational_latency_time)) + "ms"
-    result1["text"] = "Average Seek Time : " + str(int((seek_time/y)*100)/100) + "ms         Average Rotaional Latency Time : " + str(int((rotational_latency_time/y)*100)/100) + "ms"
-    result2["text"] = "Transmission Time : " + str(int(((A[3]/360)*8.3)*100)/100) + "ms   Variance of Response Times  : " + str(int((variance/y)*100)/100) + " (ms)^2     Throughput : " + str(int((A[2]/(seek_time + rotational_latency_time))*100)/100) + " request/ms"
+    total_time["text"] = "Total time: " + str(int(seek_time + rotational_latency_time)) + "ms"
+    result1["text"] = "Average Seek Time: " + str(int((seek_time/y)*100)/100) + "ms    |     Average Rotaional Latency Time: " + str(int((rotational_latency_time/y)*100)/100) + "ms"
+    result2["text"] = "Transmission Time: " + str(int(((A[3]/360)*8.3)*100)/100) + "ms | Variance of Response Time: " + str(int((variance/y)*10)/100) + " (ms)^2 | Throughput: " + str(int((A[2]/(seek_time + rotational_latency_time))*100)/100) + " request/ms"
 
 
 def SCAN():
@@ -351,9 +351,9 @@ def SCAN():
         variance += deviation**2
 
 
-    total_time["text"] = "Total time : " + str(int(seek_time + rotational_latency_time)) + "ms"
-    result1["text"] = "Average Seek Time : " + str(int((seek_time/y)*100)/100) + "ms       Average Rotaional Latency Time : " + str(int((rotational_latency_time/y)*100)/100) + "ms"
-    result2["text"] = "Transmission Time : " + str(int(((A[3]/360)*8.3)*100)/100) + "ms   Variance of Response Times  : " + str(int((variance/y)*100)/100) + " (ms)^2     Throughput : " + str(int((A[2]/(seek_time + rotational_latency_time))*100)/100) + " request/ms"
+    total_time["text"] = "Total time: " + str(int(seek_time + rotational_latency_time)) + "ms"
+    result1["text"] = "Average Seek Time: " + str(int((seek_time/y)*100)/100) + "ms    |   Average Rotaional Latency Time: " + str(int((rotational_latency_time/y)*100)/100) + "ms"
+    result2["text"] = "Transmission Time: " + str(int(((A[3]/360)*8.3)*100)/100) + "ms | Variance of Response Time: " + str(int((variance/y)*10)/100) + " (ms)^2 | Throughput: " + str(int((A[2]/(seek_time + rotational_latency_time))*100)/100) + " request/ms"
 
 
 def C_LOOK():
@@ -505,9 +505,9 @@ def C_LOOK():
         variance += deviation**2
 
 
-    total_time["text"] = "Total time : " + str(int(seek_time + rotational_latency_time)) + "ms"
-    result1["text"] = "Average Seek Time : " + str(int((seek_time/y)*100)/100) + "ms        Average Rotaional Latency Time : " + str(int((rotational_latency_time/y)*100)/100) + "ms"
-    result2["text"] = "Transmission Time : " + str(int(((A[3]/360)*8.3)*100)/100) + "ms   Variance of Response Times  : " + str(int((variance/y)*100)/100) + " (ms)^2     Throughput : " + str(int((A[2]/(seek_time + rotational_latency_time))*100)/100) + " request/ms"
+    total_time["text"] = "Total time: " + str(int(seek_time + rotational_latency_time)) + "ms"
+    result1["text"] = "Average Seek Time: " + str(int((seek_time/y)*100)/100) + "ms    |    Average Rotaional Latency Time: " + str(int((rotational_latency_time/y)*100)/100) + "ms"
+    result2["text"] = "Transmission Time: " + str(int(((A[3]/360)*8.3)*100)/100) + "ms | Variance of Response Time: " + str(int((variance/y)*10)/100) + " (ms)^2 | Throughput: " + str(int((A[2]/(seek_time + rotational_latency_time))*100)/100) + " request/ms"
 
 def order_clear():
     for z in range(21):
